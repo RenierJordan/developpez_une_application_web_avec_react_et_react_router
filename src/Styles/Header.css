@@ -1,0 +1,13 @@
+header {
+    margin: 40px 100px;
+    width: -webkit-fill-available;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.Navbar {
+    display: inline-flex;
+    gap: 2rem;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FF6060;
+}

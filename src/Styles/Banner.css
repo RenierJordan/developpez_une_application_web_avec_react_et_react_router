@@ -1,0 +1,33 @@
+.banner{
+    margin: 63px 100px;
+    display: grid;
+    place-items: center;
+    height: 223px;
+}
+
+.banner_img{
+    position: absolute;
+    width: 86%;
+    height: 223px;
+    border-radius: 10px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.banner p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+    
+}
+
+.darken {
+    position: absolute;
+    width: 86%;
+    z-index: -1;
+    height: 223px;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.3;
+}
