@@ -4,12 +4,12 @@ import "../Styles/Home.css"
 function Home() {
   return (
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>Titre de la location</article>
+        <article>Titre de la location</article>
+        <article>Titre de la location</article>
+        <article>Titre de la location</article>
+        <article>Titre de la location</article>
+        <article>Titre de la location</article>
     </section>
   )
 }

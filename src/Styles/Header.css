@@ -1,13 +1,25 @@
 header {
-    margin: 40px 100px;
-    width: -webkit-fill-available;
-    display: inline-flex;
-    justify-content: space-between;
+  margin: 40px 100px;
 }
-.Navbar {
-    display: inline-flex;
-    gap: 2rem;
-    font-size: 24px;
-    font-weight: 500;
-    color: #FF6060;
+
+.header {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.header__Navbar {
+  display: inline-flex;
+  gap: 2rem;
+  font-size: 24px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.header__Navbar a {
+  text-decoration: none;
+  color: #ff6060;
+}
+
+.header__Navbar .active {
+  text-decoration: underline;
 }

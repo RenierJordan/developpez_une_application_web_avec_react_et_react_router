@@ -5,7 +5,7 @@
     height: 223px;
 }
 
-.banner_img{
+.banner__img{
     position: absolute;
     width: 86%;
     height: 223px;
@@ -22,7 +22,7 @@
     
 }
 
-.darken {
+.banner__darken {
     position: absolute;
     width: 86%;
     z-index: -1;
