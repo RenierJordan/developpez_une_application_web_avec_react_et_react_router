@@ -1,50 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Error from './pages/Error';
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
-import {
-    createBrowserRouter,
-    RouterProvider,
-    Outlet
-} from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Error from "./pages/Error";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
 
 const HeaderFooter = () => {
-  return <>
-    <Header />
-    <Outlet />
-    <Footer />
-  </>
-}
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
 const router = createBrowserRouter([
   {
-      element: <HeaderFooter />,
-      errorElement: <><Header /><Error /></>,
-      children: [
-        {
-          path: "/",
-          element: <Home />
-        },
-        {
-         path: "/About",
-          element: <About />
-        }
-      ]
-  }
-  
-  
+    element: <HeaderFooter />,
+    errorElement: (
+      <>
+        <Header />
+        <Error />
+      </>
+    ),
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+    ],
+  },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
