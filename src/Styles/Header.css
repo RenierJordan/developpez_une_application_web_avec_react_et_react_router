@@ -20,6 +20,7 @@ header {
   color: #ff6060;
 }
 
-.header__Navbar .active {
+.header__Navbar .active,
+a:hover {
   text-decoration: underline;
 }

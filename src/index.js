@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Error from './pages/Error';
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import {
@@ -22,15 +24,15 @@ const HeaderFooter = () => {
 const router = createBrowserRouter([
   {
       element: <HeaderFooter />,
-      errorElement: <h1>404 not found</h1>,
+      errorElement: <><Header /><Error /></>,
       children: [
         {
           path: "/",
-          element: <App />
+          element: <Home />
         },
         {
          path: "/About",
-          element: <h1>A propos</h1>
+          element: <About />
         }
       ]
   }
