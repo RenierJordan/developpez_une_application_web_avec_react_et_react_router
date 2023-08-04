@@ -13,11 +13,17 @@ function ApartmentGrid() {
       .then((res) => setApartment(res));
   }
   return (
-    <section>
-      {apartments.map((apartment) => (
-        <ApartmentCard title={apartment.title} cover={apartment.cover} />
-      ))}
-    </section>
+    <main>
+      <section>
+        {apartments.map((apartment) => (
+          <ApartmentCard
+            title={apartment.title}
+            cover={apartment.cover}
+            apartment={apartment}
+          />
+        ))}
+      </section>
+    </main>
   );
 }
 

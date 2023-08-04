@@ -8,6 +8,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
+import Apartment from "./pages/Apartment";
 
 const HeaderFooter = () => {
   return (
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/apartment",
+        element: <Apartment />,
       },
       {
         path: "/about",

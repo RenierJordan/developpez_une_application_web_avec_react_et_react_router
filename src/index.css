@@ -3,3 +3,6 @@ body {
   font-family: "Montserrat";
   font-weight: 400;
 }
+main {
+  margin: 0 100px;
+}

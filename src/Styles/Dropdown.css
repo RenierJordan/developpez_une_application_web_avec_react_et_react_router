@@ -1,6 +1,22 @@
+.dropdown__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 63px;
+  width: 70%;
+  gap: 2rem;
+}
+.dropdown__container-apartment {
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .dropdown__container-apartment {
+    flex-direction: row;
+  }
+}
 .dropdown {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .dropdown__header {
   display: flex;
