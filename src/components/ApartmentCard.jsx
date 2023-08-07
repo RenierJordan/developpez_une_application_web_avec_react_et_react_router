@@ -6,7 +6,7 @@ function ApartmentCard(props) {
   return (
     <Link className="apartment-card" to="/apartment" state={props.apartment}>
       <img src={props.cover} />
-      <div>{props.title}</div>
+      <div className="apartment-card__title">{props.title}</div>
     </Link>
   );
 }

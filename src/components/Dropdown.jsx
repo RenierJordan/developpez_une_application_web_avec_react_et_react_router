@@ -7,6 +7,8 @@ function Dropdown(props) {
   const displayContent = () => {
     setIsContentVisible(!IsContentVisible);
   };
+  const desc = props.desc;
+  const IsArray = Array.isArray(desc);
   return (
     <div className="dropdown">
       <div className="dropdown__header" onClick={displayContent}>
@@ -18,9 +20,18 @@ function Dropdown(props) {
           <i className="fa-solid fa-chevron-down"></i>
         )}
       </div>
-      {IsContentVisible && (
-        <div className="drowpdown__description">{props.desc}</div>
-      )}
+      {IsContentVisible &&
+        (IsArray ? (
+          <div className="drowpdown__description">
+            <ul>
+              {desc.map((equip) => {
+                return <li>{equip}</li>;
+              })}
+            </ul>
+          </div>
+        ) : (
+          <div className="drowpdown__description">{desc}</div>
+        ))}
     </div>
   );
 }
