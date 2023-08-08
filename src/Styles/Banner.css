@@ -1,8 +1,8 @@
 .banner {
-  margin: 63px 100px;
+  margin: 63px 10%;
   display: grid;
   place-items: center;
-  height: 223px;
+  position: relative;
 }
 
 .banner__img {
@@ -15,18 +15,30 @@
 
 .banner p {
   position: absolute;
-  margin: 0;
-  font-size: 48px;
+  margin: 5%;
+  font-size: var(--fs-XL);
   font-weight: 500;
   color: white;
+  z-index: 1;
 }
 
-.banner__darken {
+.banner::after {
   position: absolute;
-  left: 100px;
-  right: 100px;
-  height: 223px;
-  background-color: black;
+  content: "";
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
+  top: 0;
+  left: 0;
+  background: black;
   opacity: 0.3;
+}
+
+@media screen and (max-width: 600px) {
+  .banner p {
+    font-size: var(--fs-default);
+  }
+  .banner__img {
+    height: 111px;
+  }
 }

@@ -1,0 +1,10 @@
+:root {
+  --primary-red: #ff6060;
+  --bg-grey: #f6f6f6;
+
+  --fs-small: 12px;
+  --fs-medium: 18px;
+  --fs-default: 24px;
+  --fs-large: 36px;
+  --fs-XL: 48px;
+}

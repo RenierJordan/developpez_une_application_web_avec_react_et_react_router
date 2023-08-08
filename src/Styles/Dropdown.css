@@ -1,6 +1,5 @@
 .dropdown__container {
   display: flex;
-  flex-direction: column;
   margin: 0 auto 63px;
   width: 70%;
   gap: 2rem;
@@ -8,15 +7,12 @@
 .dropdown__container-apartment {
   width: 100%;
 }
-@media screen and (min-width: 900px) {
-  .dropdown__container-apartment {
-    flex-direction: row;
-  }
-}
+
 .dropdown {
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-size: var(--fs-default);
 }
 .dropdown__header {
   display: flex;
@@ -24,15 +20,15 @@
   align-items: center;
   height: 47px;
   border-radius: 5px;
-  background-color: #ff6060;
+  background-color: var(--primary-red);
   color: white;
-  font-size: 24px;
+
   font-weight: 500;
   padding-inline: 1rem;
   cursor: pointer;
 }
 .drowpdown__description {
-  background-color: #f6f6f6;
+  background-color: var(--bg-grey);
   border-radius: 5px;
   padding: 1rem;
 }
@@ -41,4 +37,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown__container-apartment {
+    flex-direction: column;
+  }
+  .dropdown {
+    font-size: var(--fs-small);
+  }
 }

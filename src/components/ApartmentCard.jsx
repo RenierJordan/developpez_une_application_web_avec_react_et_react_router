@@ -5,7 +5,7 @@ import "../Styles/ApartmentCard.css";
 function ApartmentCard(props) {
   return (
     <Link className="apartment-card" to="/apartment" state={props.apartment}>
-      <img src={props.cover} />
+      <img src={props.cover} alt="" />
       <div className="apartment-card__title">{props.title}</div>
     </Link>
   );

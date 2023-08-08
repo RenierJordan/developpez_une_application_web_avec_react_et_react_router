@@ -1,10 +1,11 @@
 .apartment-page {
-  color: #ff6060;
+  color: var(--primary-red);
 }
 .apartment__infos {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
+  gap: 1rem;
 }
 .apartment__infos-first {
   display: flex;
@@ -18,13 +19,14 @@ h2 {
   display: flex;
   gap: 0.75rem;
   margin-top: 0.75rem;
+  flex-wrap: wrap;
 }
 .tag {
-  background-color: #ff6060;
+  background-color: var(--primary-red);
   border-radius: 10px;
   width: 115px;
   color: white;
-  font-size: 14px;
+  font-size: var(--fs-small);
   display: flex;
   flex-wrap: wrap;
   place-content: center;
@@ -58,5 +60,15 @@ h2 {
 }
 
 .fill {
-  color: #ff6060;
+  color: var(--primary-red);
+}
+
+@media screen and (max-width: 600px) {
+  .apartment__infos {
+    flex-direction: column;
+  }
+  .apartment__infos-second {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }

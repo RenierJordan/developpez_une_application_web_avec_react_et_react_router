@@ -1,5 +1,5 @@
 header {
-  margin: 40px 100px;
+  margin: 4% 10%;
 }
 
 .header {
@@ -10,17 +10,27 @@ header {
 .header__Navbar {
   display: inline-flex;
   gap: 2rem;
-  font-size: 24px;
+  font-size: var(--fs-default);
   font-weight: 500;
   align-items: center;
 }
 
 .header__Navbar a {
   text-decoration: none;
-  color: #ff6060;
+  color: var(--primary-red);
 }
 
 .header__Navbar .active,
 a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .header__Navbar {
+    font-size: var(--fs-small);
+    gap: 1rem;
+  }
+  .header img {
+    width: 70%;
+  }
 }
