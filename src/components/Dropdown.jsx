@@ -25,7 +25,7 @@ function Dropdown(props) {
           <div className="drowpdown__description">
             <ul>
               {desc.map((equip) => {
-                return <li>{equip}</li>;
+                return <li key={equip}>{equip}</li>;
               })}
             </ul>
           </div>

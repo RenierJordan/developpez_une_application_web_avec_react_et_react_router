@@ -29,6 +29,7 @@ a:hover {
   .header__Navbar {
     font-size: var(--fs-small);
     gap: 1rem;
+    text-transform: uppercase;
   }
   .header img {
     width: 70%;

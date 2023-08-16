@@ -7,7 +7,7 @@ function Header() {
     <header>
       <div className="header">
         <NavLink to="/">
-          <img src="LOGO.jpg" alt="" />
+          <img src="/LOGO.jpg" alt="" />
         </NavLink>
         <div className="header__Navbar">
           <NavLink to="/">

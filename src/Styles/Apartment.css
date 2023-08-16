@@ -31,6 +31,7 @@ h2 {
   flex-wrap: wrap;
   place-content: center;
   text-align: center;
+  padding: 3px;
 }
 .apartment__infos-second {
   display: flex;
