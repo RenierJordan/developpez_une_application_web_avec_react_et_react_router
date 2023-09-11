@@ -15,7 +15,7 @@ function About() {
   return (
     <>
       <Banner image={"about_banner.png"} />
-      <div className="dropdown__container">
+      <div className="dropdown__container dropdown__container-about">
         <Dropdown title="Fiabilité" desc={Fiabilite_desc} />
         <Dropdown title="Respect" desc={Respect_desc} />
         <Dropdown title="Service" desc={Service_desc} />
