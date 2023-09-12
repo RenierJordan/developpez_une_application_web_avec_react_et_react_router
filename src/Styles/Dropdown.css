@@ -8,6 +8,7 @@
 }
 .dropdown__container-about {
   margin: 0 10% 63px;
+  flex-direction: column;
 }
 .dropdown {
   display: flex;
@@ -46,10 +47,5 @@
   }
   .dropdown {
     font-size: var(--fs-small);
-  }
-}
-@media screen and (max-width: 880px) {
-  .dropdown__container-about {
-    flex-direction: column;
   }
 }
