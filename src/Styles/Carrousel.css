@@ -44,3 +44,8 @@
 .fa-chevron-right {
   right: 32px;
 }
+@media screen and (max-width: 600px) {
+  .carrousel-count {
+    display: none;
+  }
+}
